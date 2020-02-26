@@ -1,0 +1,17 @@
+[package]
+name = "yew_wasmchat"
+version = "0.1.0"
+authors = ["libr <librchn@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+web_logger = "0.1"
+log = "0.4"
+strum = "0.9"
+strum_macros = "0.9"
+serde = "1"
+serde_json = "1"
+serde_derive = "1"
+stdweb = "0.4.8"
+yew = "0.4.0"

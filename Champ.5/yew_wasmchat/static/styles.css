@@ -1,0 +1,107 @@
+
+body {
+    margin: 20px;
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: white;
+    color: #4d4d4d;
+    min-width: 230px;    
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-weight: 300;
+}
+
+.wrapper {
+    display: grid;    
+    grid-gap: 10px;
+    grid-template-columns: [col1-start] 300px  [col2-start] 300px  [col3-start] 600px [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+    background-color: #fff;
+    color: #444;
+}
+
+button { 
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;    
+    color: inherit;
+    height: 3.0em;    
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+}
+
+.message-list {    
+    list-style-type: none;
+}
+.user-list {
+    list-style-type: none;
+}
+
+.chat-text {
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start ;
+}
+.user-list {
+    grid-column: col3-start ;
+    grid-row: row1-start / row2-end;
+}
+.connect {
+    grid-column: col1-start;
+    grid-row: row2-start ;
+}
+.text-entry {
+    grid-column: col2-start ;
+    grid-row: row2-start ;
+}
+
+input {
+    margin-right: 10px;
+    width: 150px;
+}
+
+.pending-text {
+    width: 250px;
+}
+
+.sender {
+    font-weight: bold;
+    color: darkgreen;
+    margin-right: 20px;
+}
+
+.chatmsg {
+    color: darkslateblue;
+    font-style: italic;
+}
+
+input::-webkit-input-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: grey;
+}
+
+input::-moz-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: grey;
+}
+
+input::input-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: grey;
+}
