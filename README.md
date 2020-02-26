@@ -19,3 +19,4 @@ alias wat2wasm="~/wabt/bin/wat2wasm"
 
 # Version
 rustc 1.41.0 (5e1a79984 2020-01-27)
+npm install webpack -g
