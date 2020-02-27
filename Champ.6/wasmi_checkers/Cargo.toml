@@ -1,0 +1,10 @@
+[package]
+name = "wasmi_checkers"
+version = "0.1.0"
+authors = ["libr <librchn@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+wasmi = "0.4.0"
