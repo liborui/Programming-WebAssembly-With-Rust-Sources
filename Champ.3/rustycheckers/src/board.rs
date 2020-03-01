@@ -32,12 +32,12 @@ pub struct Coordinate(pub usize, pub usize);
 impl Coordinate {
 
     pub fn on_board(self) -> bool {
-        let Coordinate(x, y) = self; // (1)
+        let Coordinate(x, y) = self; // (1) An example of destructuring to pull the x and y values out of a Coordinate structure.
         x <= 7 && y <= 7
     }
 
 
-    // (2)
+    // (2) Produce an iterator of Coordinates of all possible jumps from the given coordinate.
     pub fn jump_targets_from(&self) -> impl Iterator<Item = Coordinate> {
         let mut jumps = Vec::new();
         let Coordinate(x, y) = *self;
@@ -55,7 +55,7 @@ impl Coordinate {
         jumps.into_iter()
     }
 
-    // (3)
+    // (3) Produce an iterator of Coordinates of all possible moves from the given coordinate.
     pub fn move_targets_from(&self) -> impl Iterator<Item = Coordinate> {
         let mut moves = Vec::new();
         let Coordinate(x, y) = *self;
