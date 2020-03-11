@@ -27,3 +27,7 @@ npm install webpack -g
 ```bash
 cargo run
 ```
+
+# Attention/Bug
+In Ubuntu 18.04, using ```apt``` to install npm (Webapp depends on) and libssl-dev (some Rust crates depends on) is conflict to each other, which most probably is the confliction between libssl1.0-dev (npm depends on) and libssl-dev.
+Installing libssl-dev will automatically remove npm.
